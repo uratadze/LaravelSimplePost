@@ -95,12 +95,7 @@ class PostService implements PostServiceInterface
      */
     public function post(int $id)
     {
-        $post = $this->getApiData(self::API_POST_URL);
-
-        if($post)
-            return $post->firstWhere('id', $id);
-
-        return $post;
+        return $this->getApiData(self::API_POST_URL)->firstWhere('id', $id);
     }
 
     /**

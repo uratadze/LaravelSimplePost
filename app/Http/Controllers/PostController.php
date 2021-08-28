@@ -11,12 +11,12 @@ use Psr\SimpleCache\InvalidArgumentException;
 class PostController extends Controller
 {
     /**
-     * @var integer POSTS_PER_PAGE
+     * @const integer POSTS_PER_PAGE
      */
     const POSTS_PER_PAGE = 5;
 
     /**
-     * @var integer COMMENTS_PER_PAGE
+     * @const integer COMMENTS_PER_PAGE
      */
     const COMMENTS_PER_PAGE = 2;
 
